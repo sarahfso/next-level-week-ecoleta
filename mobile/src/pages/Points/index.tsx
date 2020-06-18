@@ -95,7 +95,7 @@ const Points = () => {
 
             setSelectedItems(filteredItems)
         } else {
-            setSelectedItems([...selectedItems, id])
+            setSelectedItems([ ...selectedItems, id])
         }        
     }
 
@@ -159,8 +159,7 @@ const Points = () => {
                         <SvgUri width={42} height={42} uri={item.image_url}/>
                         <Text style={styles.itemTitle}>{item.title}</Text>
                     </TouchableOpacity>
-                ))}
-                
+                ))}              
             </ScrollView>
         </View>
         </>
